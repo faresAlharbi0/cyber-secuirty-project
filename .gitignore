@@ -1,0 +1,5 @@
+mysql
+*sql
+*.env
+package-lock.json
+node_modules

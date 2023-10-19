@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <form action="/" id="form" class="form" method="POST">
+        <div>
+            <label for="min_sal" >Minimum acceptable industry salary</label>
+            <input type="number" name="min_sal" maxlength="10" pattern="[0-9]">
+        </div>
+        <div><label for="gpa">gpa</label>
+            <input type="number" name="gpa" maxlength="6" step="0.01" pattern="[0-5][.][0-9]">
+        </div>
+        <div>
+            <span>select your intrest</span> <br>
+            <input type="radio" id="Very High" name="intrest" value="Very High">
+            <label for="Very High">Very High</label><br>
+            <input type="radio" id="High" name="intrest" value="High">
+            <label for="High">High</label><br>
+            <input type="radio" id="Medium" name="intrest" value="Medium">
+            <label for="Medium">Medium</label><br>
+            <input type="radio" id="Low" name="intrest" value="Low">
+            <label for="Low">Low</label> 
+        </div>
+        <div><input type="submit"></div>
+    </form>
+</body>
+</html>
