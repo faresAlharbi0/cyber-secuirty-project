@@ -8,7 +8,7 @@ app.use("/",express.static("./public"));
 const mysql = require("mysql2");
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-app.listen(2500,(req,res)=>{
+const server  = app.listen(2500,(req,res)=>{
     console.log("started")
 })
 
@@ -92,3 +92,4 @@ function printErrors(errArray){
     }
     return errors.join("");
 }
+module.exports = server;
