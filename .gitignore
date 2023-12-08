@@ -3,3 +3,4 @@ mysql
 *.env
 package-lock.json
 node_modules
+coverage
